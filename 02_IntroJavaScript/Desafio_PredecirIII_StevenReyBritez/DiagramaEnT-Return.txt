@@ -1,0 +1,71 @@
+Fragmento de código 1
+
+__________var / (-> action)______________value___
+-> hello()			|
+-> console.log('hello'); 	| "hello"
+-> console.log('Dojo'); 	| "Dojo"
+
+Fragmento de código 2
+
+__________var / (-> action)_________________value___
+result					| hello()
+-> hello()				| return 15;
+-> console.log('hello'); 		| "hello"
+-> console.log('result is', result); 	| "result is 15"
+
+
+Fragmento de código 3
+
+__________var / (-> action)_________________value___
+result					| numPlus(3)
+numPlus(num)				| numPlus(3)
+num					| 3
+-> console.log('num is, num'); 		| "num is 3"
+-> numPlus(3)				| return 3+15
+result					| 18
+-> console.log('result is', result);	| "result is 18"
+
+
+Fragmento de código 4
+
+__________var / (-> action)_________________value___
+num					| 15
+-> console.log(num); 			| 15
+result					| logAndReturn(10)
+logAndReturn(num2)			| logAndReturn(10)
+-> console.log(num2);			| 10
+logAndReturn(10)			| return 10
+result					| 10
+-> console.log(result); 		| 10
+-> console.log(num); 			| 15
+
+
+Fragmento de código 5
+
+__________var / (-> action)_________________value___
+num					| 15
+-> console.log(num); 			| 15
+result					| timesTwo(10)	
+timesTwo(num2)				| timesTwo(10)
+-> console.log(num2);			| 10
+timesTwo(10)				| return 10*2
+result					| 20
+-> console.log(result); 		| 20
+-> console.log(num); 			| 15
+
+
+Fragmento de código 6
+
+__________var / (-> action)_________________value___
+result					| timesTwoAgain(3) + timesTwoAgain(5)	
+timesTwoAgain(num)			| timesTwoAgain(3)
+-> console.log(num is, num);		| "num is 3"
+y					| 3 * 2
+timesTwoAgain(3)			| return 6
+result					| 6 + timesTwoAgain(5)	
+timesTwoAgain(num)			| timesTwoAgain(5)
+-> console.log(num is, num);		| "num is 5"
+y					| 5 * 2
+timesTwoAgain(3)			| return 10
+result					| 6 + 10
+-> console.log('result is', result); 	| "result is 16"

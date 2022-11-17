@@ -1,0 +1,23 @@
+Fragmento de código 1
+
+_____var______________value___
+auntContactInfo | ["Paula", "Smith", "Calle Principal 1234", "St. Louis", "MO", 12345] -> console.log(auntContactInfo);
+		|
+
+Fragmento de código 2
+
+_______var______________value___
+frozen 		| ["brócoli", "helado"]
+-> frozen.push("croqueta de papa")
+frozen 		| ["brócoli", "helado", "croqueta de papa"]
+
+
+Fragmento de código 3
+
+_______var______________value___
+movieLibrary  	| ["Bambi", "E.T.", "Toy Story"]
+-> movieLibrary.push("Zoro")
+movieLibrary  	| ["Bambi", "E.T.", "Toy Story", "Zoro"]
+-> movieLibrary[1] = "Beetlejuice";
+movieLibrary  	| ["Bambi", "Beetlejuice", "Toy Story", "Zoro"]  -> console.log(movieLibrary);
+
